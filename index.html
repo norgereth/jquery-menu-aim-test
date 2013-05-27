@@ -41,14 +41,6 @@
             padding: 5px;
             border-radius: 5px;
         }
-        div.left-switcher {
-            padding: 5px;
-            margin: 50px auto;
-            border-radius: 5px;
-            background-color: #fbb450;
-            width: 287px;
-            cursor: pointer;
-        }
     </style>
 </head>
 <body>
@@ -70,18 +62,9 @@
     </ul>
 </div>
 
-<div class="left-switcher">switch left property</div>
-
 <script>
 
 $(function() {
-
-    $('div.left-switcher').click(function() {
-        $('div.item-content').each(function() {
-            var currentLeft = $(this).css('left');
-            $(this).hide().css({ left: (currentLeft == '100%' ? '-312px' : '100%') });
-        });
-    });
 
     $('ul.list').menuAim({
         activate: function(row) {
